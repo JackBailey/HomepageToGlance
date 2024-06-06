@@ -151,6 +151,7 @@ html, body {
     width: 80vw;
     height: 80vh;
     background-color: var(--background-1);
+    color: var(--foreground-1);
     padding: 2rem;
     border-radius: 2rem;
     box-sizing: border-box;
@@ -187,7 +188,6 @@ html, body {
         width: 100%;
 
         h2 {
-          font-family: "Fira Code", monospace;
           font-weight: 400;
           font-size: 1rem;
           text-align: center;

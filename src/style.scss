@@ -14,14 +14,7 @@
         url("/fonts/Quicksand/Quicksand-SemiBold.woff") format("woff"),
         url("/fonts/Quicksand/Quicksand-SemiBold.ttf") format("ttf");
     font-display: swap;
-
 }
-@font-face {
-    font-family: "Fira Code";
-    src: url("/fonts/FiraCode/FiraCode-VariableFont_wght.ttf") format("ttf");
-    font-display: swap;
-}
-
 html {
     font-size: 100%;
 }
