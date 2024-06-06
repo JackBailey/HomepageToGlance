@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 400;
+    src: url("/fonts/Quicksand/Quicksand-Regular.woff2") format("woff2"),
+        url("/fonts/Quicksand/Quicksand-Regular.woff") format("woff"),
+        url("/fonts/Quicksand/Quicksand-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 600;
+    src: url("/fonts/Quicksand/Quicksand-SemiBold.woff2") format("woff2"),
+        url("/fonts/Quicksand/Quicksand-SemiBold.woff") format("woff"),
+        url("/fonts/Quicksand/Quicksand-SemiBold.ttf") format("ttf");
+    font-display: swap;
+
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url("/fonts/FiraCode/FiraCode-VariableFont_wght.ttf") format("ttf");
+    font-display: swap;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    --accent: #5b42f5;
+    --accent-muted: #5c51d6;
+    --accent-foreground: white;
+    --background-1: #fdfdfd;
+    --background-2: #f2f2f2;
+    --foreground-1: #0d0a20;
+    --foreground-2: #aeb2ba;
+    @media (prefers-color-scheme: dark) {
+        --accent: #5b42f5;
+        --accent-muted: #5c51d6;
+        --accent-foreground: white;
+        --background-1: #0d0a20;
+        --background-2: #262534;
+        --foreground-1: #e6edf3;
+        --foreground-2: #cfd6dd;
+    }
+}

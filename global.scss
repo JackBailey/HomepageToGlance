@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 400;
+    src: url("/fonts/Quicksand/Quicksand-Regular.woff2") format("woff2"),
+        url("/fonts/Quicksand/Quicksand-Regular.woff") format("woff"),
+        url("/fonts/Quicksand/Quicksand-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    font-weight: 600;
+    src: url("/fonts/Quicksand/Quicksand-SemiBold.woff2") format("woff2"),
+        url("/fonts/Quicksand/Quicksand-SemiBold.woff") format("woff"),
+        url("/fonts/Quicksand/Quicksand-SemiBold.ttf") format("ttf");
+    font-display: swap;
+}
+:root {
+    --accent: #5b42f5;
+    --accent-muted: #5c51d6;
+    --accent-foreground: white;
+    --background-1: #fdfdfd;
+    --background-2: #f2f2f2;
+    --foreground-1: #0d0a20;
+    --foreground-2: #aeb2ba;
+
+    --section-width: clamp(16rem, 90vw, 1600px);
+    --blog-width: clamp(16rem, 90vw, 1000px);
+}
+
+html {
+    font-size: 100%;
+}
+
+:root:not([dark-mode]) {
+    // When JS not enabled, for noscript JS and mitigating "flashbangs"
+    @media (prefers-color-scheme: dark) {
+        --accent: #5b42f5;
+        --accent-muted: #5c51d6;
+        --accent-foreground: white;
+        --background-1: #0d0a20;
+        --background-2: #262534;
+        --foreground-1: #e6edf3;
+        --foreground-2: #cfd6dd;
+    }
+}
+
+:root[dark-mode="true"] {
+    --accent: #5b42f5;
+    --accent-muted: #5c51d6;
+    --accent-foreground: white;
+    --background-1: #0d0a20;
+    --background-2: #262534;
+    --foreground-1: #e6edf3;
+    --foreground-2: #cfd6dd;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root,
+html,
+body {
+    color: var(--foreground-1);
+}
+
+body {
+    background-color: var(--background-1);
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding-top: 4rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+// @media screen and (max-width: 768px) {
+//     :root {
+//         font-size: 14px;
+//     }
+// }
+
+// @media screen and (min-width: 1920px) {
+//     :root {
+//         font-size: 14px;
+//     }
+// }
+
+// @media screen and (min-width: 1921px) {
+//     :root {
+//         font-size: 16px;
+//     }
+// }
