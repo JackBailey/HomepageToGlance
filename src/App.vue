@@ -12,7 +12,7 @@
       <div class="editor-input">
         <h2>Input - Homepage services.yaml</h2>
         <MonacoEditor
-          theme="vs"
+          :theme="darkMode ? 'vs-dark' : 'vs'"
           v-model:value="code"
           language="yaml"
           :options="options"
@@ -21,7 +21,7 @@
       <div class="editor-output">
         <h2>Output - glance.yml</h2>
         <MonacoEditor
-          theme="vs"
+          :theme="darkMode ? 'vs-dark' : 'vs'"
           v-model:value="output"
           language="yaml"
           :options="options"
@@ -86,6 +86,7 @@ export default {
   },
   data() {
     return {
+      darkMode: window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches,
       code: `- Server:
     - Unraid: 
         icon: unraid
