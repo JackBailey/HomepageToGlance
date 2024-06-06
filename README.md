@@ -1,35 +1,9 @@
-# homepage-to-glance
+# Homepage to Glance
 
-This template should help get you started developing with Vue 3 in Vite.
+A super simple site to translate a services.yaml file into glance.yml's bookmarks.
 
-## Recommended IDE Setup
+![](image1.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Currently only uses group names, item names, icons and links, if more is easily translatable, please let me know.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+Use it at https://homepage-to-glance.projects.jackbailey.dev
